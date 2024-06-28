@@ -1,0 +1,50 @@
+<!-- 1- Create a heading tag and change the font-size and background color using JavaScript
+
+2-Create 4 empty box in your HTML and style them using your style sheet giving them same background color. Use your JavaScript to assign contents to the boxes and different background color for each box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="">
+    <div class="container container-activity-1">
+        <h1 id="head">Class Activity <span id="activity-1"></span></h1>
+        <p>styling the boxes using Javascript</p>
+
+        <div class="box-cotainer">
+            <div class="box" id="box-1">Box 1</div>
+            <div class="box" id="box-2">Box 2</div>
+            <div class="box" id="box-3">Box 3</div>
+            <div class="box" id="box-4">Box 4</div>
+        </div>
+
+    </div>  
+
+    <script>
+        // alert('Hello World');
+        document.getElementById('activity-1').innerHTML = 1;
+        document.getElementById('activity-1').style.background = 'yellow';
+        document.getElementById('activity-1').style.padding = '5px 10px';
+        document.getElementById('box-1').style.background = '#f97171';
+        document.getElementById('box-1').style.color = '#000';
+        document.getElementById('box-1').innerText = 'html';
+        document.getElementById('box-2').style.background = '#f99d50';
+        document.getElementById('box-2').style.color = '#000';
+        document.getElementById('box-2').innerText = 'css';
+        document.getElementById('box-3').style.background = '#f5d460';
+        document.getElementById('box-3').style.color = '#000';
+        document.getElementById('box-3').innerText = 'javascript';
+        document.getElementById('box-4').style.background = '#c6ed78';
+        document.getElementById('box-4').style.color = '#000';
+        document.getElementById('box-4').innerText = 'react';
+        document.getElementsByClassName('box').style.color = 'red';
+    </script>
+</body>
+</html>

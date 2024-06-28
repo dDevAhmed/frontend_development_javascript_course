@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #00004d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* class activity 1 */
+.box-cotainer {
+    display: flex;
+    gap: 10px;
+
+    .box{
+        display: grid;
+        place-content: center;
+        padding: 100px;
+        border-radius: 5px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+    }
+}
+/* class activity 1 */
