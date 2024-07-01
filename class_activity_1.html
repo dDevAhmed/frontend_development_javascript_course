@@ -15,10 +15,10 @@
 </head>
 <body id="">
     <div class="container container-activity-1">
-        <h1 id="head">Class Activity <span id="activity-1"></span></h1>
+        <h1 id="head">Class Activity <span id="activity-number">1</span></h1>
         <p>styling the boxes using Javascript</p>
 
-        <div class="box-cotainer">
+        <div class="box-container">
             <div class="box" id="box-1">Box 1</div>
             <div class="box" id="box-2">Box 2</div>
             <div class="box" id="box-3">Box 3</div>
@@ -28,10 +28,9 @@
     </div>  
 
     <script>
-        // alert('Hello World');
-        document.getElementById('activity-1').innerHTML = 1;
-        document.getElementById('activity-1').style.background = 'yellow';
-        document.getElementById('activity-1').style.padding = '5px 10px';
+        document.getElementById('activity-number').style.background = '#FFD600';
+        document.getElementById('activity-number').style.padding = '5px 10px';
+
         document.getElementById('box-1').style.background = '#f97171';
         document.getElementById('box-1').style.color = '#000';
         document.getElementById('box-1').innerText = 'html';
@@ -44,7 +43,10 @@
         document.getElementById('box-4').style.background = '#c6ed78';
         document.getElementById('box-4').style.color = '#000';
         document.getElementById('box-4').innerText = 'react';
-        document.getElementsByClassName('box').style.color = 'red';
+
+        // document.getElementsByTagName('div').style.color = 'red';
+        // document.getElementsByClassName('.box').style.fontSize = '50px';
+        // document.getElementsByClassName('box').style.textTransform = 'uppercase';
     </script>
 </body>
 </html>

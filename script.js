@@ -4,10 +4,15 @@ const primaryColor = '#00004d';
 // const secondaryColor = '#4d4d00';
 const secondaryColor = '#fff';
 
-document.querySelector('body').style.backgroundColor = primaryColor;
-document.querySelector('body').style.color = secondaryColor;
-document.getElementsByClassName('nav-links').style.color = secondaryColor;
+// document.querySelector('body').style.backgroundColor = primaryColor;
+// document.querySelector('body').style.color = secondaryColor;
+// document.getElementsByClassName('nav-links').style.color = secondaryColor;
 // document.getElementsByClassName('nav-links').style.textdecoration = none;
+
+// studName = 'max';
+// console.log(studName);
+
+
 
 
 /********************

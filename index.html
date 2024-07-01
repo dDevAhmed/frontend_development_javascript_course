@@ -15,6 +15,7 @@
     <nav>
         <ul>
             <li><a href="class_activity_1.html" class="nav-links">Class Activity 1</a></li>
+            <li><a href="class_activity_2.html" class="nav-links">Class Activity 2</a></li>
         </ul>
     </nav>
     <h1 id="name">Hello There, I'm <span id="myname"></span></h1>
@@ -24,8 +25,17 @@
     <p>4th para</p>
     <p>5th para</p>
 
-    <p id="return-only-content">Return only content</p>
-    <p id="return-content-element">Return only content</p>
+    <div id="lorem-para-container">
+        <span class="button-container">
+            <button type="button" id="show-lorem">Show the lorem paragraph</button>
+            <button type="button" id="hide-lorem" style="display: none;">Hide the lorem paragraph</button>
+        </span>
+        <p id="lorem-para" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+            deleniti.</p>
+    </div>
+
+    <!-- <p id="return-only-content">Return only content</p>
+    <p id="return-content-element">Return only content</p> -->
 
 
     <script>
@@ -33,6 +43,24 @@
         document.getElementById('myname').innerText = 'Ahmed Mahmud';
         document.getElementById('name').style.textAlign = 'center';
         document.write('<h1 style="color: orange;">Welcome to Javascript</h1>');
+
+        let loremParaContainer = document.getElementById('lorem-para-container');
+        let loremPara = document.getElementById('lorem-para');
+        let showLorem = document.getElementById('show-lorem');
+        let hideLorem = document.getElementById('hide-lorem');
+
+        showLorem.addEventListener('click', () => {
+            loremParaContainer.style.border = '2px solid #00004d';
+            loremParaContainer.style.padding = '20px';
+            loremPara.style.display = 'block';
+            hideLorem.style.display = 'block';
+        });
+
+        hideLorem.addEventListener('click', () => {
+            loremParaContainer.style.border = 'none';
+            loremPara.style.display = 'none';
+            hideLorem.style.display = 'none';
+        });
     </script>
 </body>
 

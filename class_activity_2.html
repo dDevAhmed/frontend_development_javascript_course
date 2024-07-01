@@ -1,0 +1,84 @@
+<!-- Exercise
+1-Create a navbar and make one of the list item a drop down.
+2. Create a button and a text using HTML and CSS and make the text reveal when the button is clicked using JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="">
+    <h1 id="head">Class Activity <span id="activity-number">2</span></h1>
+
+    <div class="class-2-nav-container">
+        <div class="class-activity-2-nav">
+            <a href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">About</a>
+            <div class="dropdown" id="dropdown">
+                <a href="javascript:void(0)">Services <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="javascript:void(0)">Web Development</a>
+                    <a href="javascript:void(0)">Networking</a>
+                    <a href="javascript:void(0)">Graphics</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)">Services</a>
+            <a href="javascript:void(0)">Contact</a>
+        </div>
+    
+    </div>
+    <span class="class-2-button-container">
+        <button type="button" id="show-lorem">Show the lorem paragraph</button>
+        <button type="button" id="hide-lorem" style="display: none;">Hide the lorem paragraph</button>
+    </span>
+    <p id="lorem-para" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+        deleniti.</p>
+
+    <script>
+        document.getElementById('activity-number').style.background = '#FFD600';
+        document.getElementById('activity-number').style.padding = '5px 10px';
+
+        let dropdownBtn = document.getElementById('dropdown');
+        let dropdownContent = document.getElementById('dropdown-content');
+
+        dropdownBtn.addEventListener('mouseenter', () => {
+
+            dropdownContent.style.display = 'block';
+        });
+        dropdownBtn.addEventListener('mouseleave', () => {
+
+            dropdownContent.style.display = 'none';
+        });
+
+        let loremPara = document.getElementById('lorem-para');
+        let showLorem = document.getElementById('show-lorem');
+        let hideLorem = document.getElementById('hide-lorem');
+
+        showLorem.addEventListener('click', () => {
+
+            if (loremPara.style.display == 'none') {
+                loremPara.style.display = 'block';
+                showLorem.innerText = 'Hide the lorem paragraph';
+            }
+            else {
+                loremPara.style.display = 'none';
+                showLorem.innerText = 'Show the lorem paragraph';
+            }
+        });
+
+        hideLorem.addEventListener('click', () => {
+            loremPara.style.display = 'none';
+            hideLorem.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
