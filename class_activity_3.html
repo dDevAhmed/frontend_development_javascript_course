@@ -1,0 +1,71 @@
+<!-- 1- create a div box and add a text in the box. Using CSS animation keyframes, set 4 background colour to the box and 3 different border. Also use keyframes to increase the font size of the text
+2- Create a div box and button and use JavaScript variables and event to make the background colour of the box change when the button is clicked -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="">
+    <div class="container-activity-3">
+        <h1 id="head">Class Activity <span id="activity-number">3</span></h1>
+
+        <div class="boxes-container">
+            <span>
+                <p>styling the box using CSS animation</p>
+                <div class="box box-1" id="box-1">Box 1</div>
+            </span>
+    
+            <span>
+                <p>using javascript event to style the box</p>
+                <div class="box box-2" id="box-2">Box 2</div>
+                <span class="button-container">
+                    <button type="button" class="button-default" id="button-default">Default</button>
+                    <button type="button" class="button-red" id="button-red">Red</button>
+                    <button type="button" class="button-green" id="button-green">Green</button>
+                    <button type="button" class="button-blue" id="button-blue">Blue</button>
+                </span>
+            </span>
+        </div>
+
+    </div>
+
+
+    <script>
+        document.getElementById('activity-number').style.background = '#FFD600';
+        document.getElementById('activity-number').style.padding = '5px 10px';
+
+        let box2 = document.getElementById('box-2');
+
+        let defaultButton = document.getElementById('button-default');
+        let redButton = document.getElementById('button-red');
+        let greenButton = document.getElementById('button-green');
+        let blueButton = document.getElementById('button-blue');
+
+        defaultButton.addEventListener('click', () => {
+            box2.style.background = 'black';
+        });
+
+        redButton.addEventListener('click', () => {
+            box2.style.background = 'red';
+        });
+
+        greenButton.addEventListener('click', () => {
+            box2.style.background = 'green';
+        });
+
+        blueButton.addEventListener('click', () => {
+            box2.style.background = 'blue';
+        });
+    </script>
+</body>
+
+</html>

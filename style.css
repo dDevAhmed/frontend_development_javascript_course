@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #000;
-    --tertiary-color: #FFD600;
+    --tertiary-color: #ffd600;
 }
 
 * {
@@ -44,7 +44,7 @@ nav ul {
 /* index */
 
 /* class activity 1 */
-.box-container {
+.container-activity-1 {
     display: flex;
     gap: 10px;
 
@@ -115,7 +115,6 @@ nav ul {
 } */
 
 .class-2-button-container {
-    
     button {
         margin-top: 30px;
         padding: 0.8rem 1.2rem;
@@ -131,5 +130,103 @@ nav ul {
         }
     }
 }
-
 /* class activity 2 */
+
+/* class activity 3 */
+.container-activity-3 {
+    .boxes-container {
+        display: flex;
+        gap: 30px;
+        
+        span {
+            /* padding: 0 100px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        span:nth-child(2) {
+            position: absolute;
+            left: 400px;
+        }
+
+        .box {
+            display: grid;
+            place-content: center;
+            padding: 100px;
+            border-radius: 5px;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            width: fit-content;
+        }
+        .box-1 {
+            border: 5px solid var(--secondary-color);
+            animation: animateBox1 5s ease-in-out infinite;
+        }
+
+        .button-container {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            button {
+                padding: 0.4rem 0.6rem;
+                border: none;
+                cursor: pointer;
+                background: var(--secondary-color);
+                color: var(--primary-color);
+                border-radius: 5px;
+                flex: 1;
+            }
+
+            .button-default {
+                &:hover {
+                    background: var(--tertiary-color);
+                    color: black;
+                }
+            }
+            .button-red {
+                &:hover {
+                    background: red;
+                }
+            }
+            .button-green {
+                &:hover {
+                    background: green;
+                }
+            }
+            .button-blue {
+                &:hover {
+                    background: blue;
+                }
+            }
+        }
+    }
+}
+
+@keyframes animateBox1 {
+    0% {
+        background: var(--secondary-color);
+        border: 5px solid var(--secondary-color);
+    }
+    25% {
+        background: #f97171;
+        border: 5px solid red;
+        font-size: 1.5rem;
+    }
+    50% {
+        background: #f99d50;
+        border: 5px solid blue;
+        font-size: 2rem;
+    }
+    75% {
+        background: #f5d460;
+        border: 5px solid green;
+        font-size: 2.5rem;
+    }
+    100% {
+        background: #c6ed78;
+        font-size: 3rem;
+    }
+}
+/* class activity 3 */
