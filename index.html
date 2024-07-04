@@ -6,59 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to Javascript</title>
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="">
-    <nav>
-        <ul>
-            <li><a href="class_activity_1.html" class="nav-links">Class Activity 1</a></li>
-            <li><a href="class_activity_2.html" class="nav-links">Class Activity 2</a></li>
-            <li><a href="class_activity_3.html" class="nav-links">Class Activity 3</a></li>
-        </ul>
-    </nav>
-    <h1 id="name">Hello There, I'm <span id="myname"></span></h1>
-    <p>1st para</p>
-    <p>2nd para</p>
-    <p>3rd para</p>
-    <p>4th para</p>
-    <p>5th para</p>
+    <aside class="side-nav">
+        <nav>
+            <span class="top-section">
+                <img src="img/icons8-javascript-100.png" alt="Javascript Logo" class="nav-logo">
+                <div class="nav-links-container">
+                    <a href="index.html" class="nav-links"><i class="fa-duotone fa-house"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i></a>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-chalkboard-user"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Activities -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-clipboard-check"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Assignments -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-gear "
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Projects -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-user-tie"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                        <span class="nav-link-text">
+                            <!-- Activities -->
+                        </span>
+                    </a>
+                    <a href="https://thehtmlcourse.vercel.app/" class="nav-links solid-white" target="_blank"><i
+                            class="fa-brands fa-html5" style="color: #000;"></i>
+                        <span class="nav-link-text">
+                            <!-- Html Course -->
+                        </span>
+                    </a>
+                    <a href="https://thecsscourse.vercel.app/" class="nav-links solid-white" target="_blank"><i
+                            class="fa-brands fa-css3-alt" style="color: #000;"></i>
+                        <span class="nav-link-text">
+                            <!-- Css Course -->
+                        </span>
+                    </a>
+                </div>
+            </span>
+            <span class="bottom-section">
+                <div class="nav-links-container">
+                    <a href="https://github.com/dDevAhmed/frontend_development_javascript_course"
+                        class="nav-links solid-white" target="_blank"><i class="fa-brands fa-github"
+                            style="color: #000;"></i></a>
+                    <a href="#" class="nav-links" id="light-mode" title="Night Mode"><i class="fa-duotone fa-lightbulb"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i></a>
 
-    <div id="lorem-para-container">
-        <span class="button-container">
-            <button type="button" id="show-lorem">Show the lorem paragraph</button>
-            <button type="button" id="hide-lorem" style="display: none;">Hide the lorem paragraph</button>
-        </span>
-        <p id="lorem-para" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            deleniti.</p>
-    </div>
+                </div>
+            </span>
+        </nav>
+    </aside>
+    <main class="main-container">
+        <header>
+            <span class="page-title">
+                <h3 id="head">Home</h3>
+            </span>
+            <span class="navigation">
+                <!-- <a href="#"><i class="fa-regular fa-angle-left"></i></a> -->
+                <a href="class_activity_1.html">1</a>
+                <a href="class_activity_2.html">2</a>
+                <a href="class_activity_3.html">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="class_activity_1.html"><i class="fa-regular fa-angle-right"></i></a>
+            </span>
+        </header>
+        <section class="body-content">
+            <div class="index-container">
+                <span class="">
+                    <h1 id="name">Hello <span class="stranger-name" id="stranger-name">there</span> 👋</h1>
+                    <p class="">Enter your name to begin </p>
+                    <input type="text" id="stranger-name-input" class="stranger-name-input" autofocus>
+                </span>
+
+                <p id="course-description">Welcome to my
+                    JavaScript journey! Throughout this adventure, I've tackled class activities that challenged my
+                    brain, completed assignments that tested my mettle, and embarked on projects that turned mere ideas
+                    into digital realities. From crafting interactive web pages to solving complex coding puzzles, I've
+                    witnessed the wonders of JavaScript firsthand. Join me as I share the highs, the lows, and the
+                    humorous hiccups along the way. Buckle up, because this JavaScript ride is anything but boring!</p>
+            </div>
+        </section>
+
+        <footer>
+            <!-- fixme - repo link -->
+            <p>Page's <a href="#">Repo</a></p>
+        </footer>
+    </main>
 
     <!-- <p id="return-only-content">Return only content</p>
     <p id="return-content-element">Return only content</p> -->
 
 
+    <script src="script.js"></script>
     <script>
-        // alert('Hello World');
-        document.getElementById('myname').innerText = 'Ahmed Mahmud';
-        document.getElementById('name').style.textAlign = 'center';
-        document.write('<h1 style="color: orange;">Welcome to Javascript</h1>');
-
-        let loremParaContainer = document.getElementById('lorem-para-container');
-        let loremPara = document.getElementById('lorem-para');
         let showLorem = document.getElementById('show-lorem');
         let hideLorem = document.getElementById('hide-lorem');
 
+        let strangerNameInput = document.getElementById('stranger-name-input');
+        let strangerName = document.getElementById('stranger-name');
+
+        strangerNameInput.addEventListener('input', () => {
+            strangerName.innerText = strangerNameInput.value;
+        });
+
         showLorem.addEventListener('click', () => {
-            loremParaContainer.style.border = '2px solid #00004d';
-            loremParaContainer.style.padding = '20px';
             loremPara.style.display = 'block';
             hideLorem.style.display = 'block';
         });
 
         hideLorem.addEventListener('click', () => {
-            loremParaContainer.style.border = 'none';
             loremPara.style.display = 'none';
             hideLorem.style.display = 'none';
         });

@@ -9,40 +9,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to Javascript</title>
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="">
-    <div class="container-activity-3">
-        <h1 id="head">Class Activity <span id="activity-number">3</span></h1>
-
-        <div class="boxes-container">
-            <span>
-                <p>styling the box using CSS animation</p>
-                <div class="box box-1" id="box-1">Box 1</div>
+    <aside class="side-nav">
+        <nav>
+            <span class="top-section">
+                <img src="img/icons8-javascript-100.png" alt="Javascript Logo" class="nav-logo">
+                <div class="nav-links-container">
+                    <a href="index.html" class="nav-links"><i class="fa-duotone fa-house"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i></a>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-chalkboard-user"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Activities -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-clipboard-check"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Assignments -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-gear "
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                            <span class="nav-link-text">
+                                <!-- Projects -->
+                            </span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="nav-links"><i class="fa-duotone fa-user-tie"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+                        <span class="nav-link-text">
+                            <!-- Activities -->
+                        </span>
+                    </a>
+                    <a href="https://thehtmlcourse.vercel.app/" class="nav-links solid-white" target="_blank"><i
+                            class="fa-brands fa-html5" style="color: #000;"></i>
+                        <span class="nav-link-text">
+                            <!-- Html Course -->
+                        </span>
+                    </a>
+                    <a href="https://thecsscourse.vercel.app/" class="nav-links solid-white" target="_blank"><i
+                            class="fa-brands fa-css3-alt" style="color: #000;"></i>
+                        <span class="nav-link-text">
+                            <!-- Css Course -->
+                        </span>
+                    </a>
+                </div>
             </span>
+            <span class="bottom-section">
+                <div class="nav-links-container">
+                    <a href="https://github.com/dDevAhmed/frontend_development_javascript_course" class="nav-links solid-white" target="_blank"><i
+                            class="fa-brands fa-github" style="color: #000;"></i></a>
+                    <a href="#" class="nav-links" id="light-mode" title="Night Mode"><i class="fa-duotone fa-lightbulb"
+                            style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i></a>
+
+                </div>
+            </span>
+        </nav>
+    </aside>
+    <main class="main-container">
+        <header>
+            <span class="page-title">
+                <h3 id="head">Class Activity <span class="number">3</span></h3>
+            </span>
+            <span class="navigation">
+                <a href="class_activity_2.html"><i class="fa-regular fa-angle-left"></i></a>
+                <a href="class_activity_1.html">1</a>
+                <a href="class_activity_2.html">2</a>
+                <a href="#" class="current-page">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#"><i class="fa-regular fa-angle-right"></i></a>
+            </span>
+        </header>
+        <section class="body-content">
+            <div class="activity-container activity-container-3">
+                <p class="section-heading">Task</p>   
+                <ol>
+                    <li><p>Changing the styling of a div container using css animation</p></li>
+                    <li><p>Changing the background color of a div containerwith button event listener</p></li>
+                </ol> 
+                
+                <p class="section-heading">Solution</p> 
+                <div class="boxes-container">
+                    <span>
+                        <p>styling the box using CSS animation</p>
+                        <div class="box box-1" id="box-1">Box 1</div>
+                    </span>
+            
+                    <span>
+                        <p>using javascript event to style the box</p>
+                        <div class="box box-2" id="box-2">Box 2</div>
+                        <span class="button-container">
+                            <button type="button" class="button-default" id="button-default" onclick="">Default</button>
+                            <button type="button" class="button-red" id="button-red" onclick="">Red</button>
+                            <button type="button" class="button-green" id="button-green" onclick="">Green</button>
+                            <button type="button" class="button-blue" id="button-blue" onclick="">Blue</button>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <!-- fixme - repo link -->
+           <p>Page's <a href="#">Repo</a></p>
+        </footer>
+    </main>
     
-            <span>
-                <p>using javascript event to style the box</p>
-                <div class="box box-2" id="box-2">Box 2</div>
-                <span class="button-container">
-                    <button type="button" class="button-default" id="button-default">Default</button>
-                    <button type="button" class="button-red" id="button-red">Red</button>
-                    <button type="button" class="button-green" id="button-green">Green</button>
-                    <button type="button" class="button-blue" id="button-blue">Blue</button>
-                </span>
-            </span>
-        </div>
-
-    </div>
-
-
+    <script src="script.js"></script>
     <script>
-        document.getElementById('activity-number').style.background = '#FFD600';
-        document.getElementById('activity-number').style.padding = '5px 10px';
-
         let box2 = document.getElementById('box-2');
 
         let defaultButton = document.getElementById('button-default');

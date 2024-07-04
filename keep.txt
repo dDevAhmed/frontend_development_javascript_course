@@ -1,0 +1,20 @@
+---nav icons
+1. activity - <i class="fa-duotone fa-chalkboard-user" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+2. assignment - <i class="fa-duotone fa-clipboard-check" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+3. project - <i class="fa-duotone fa-gear" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+4. home - <i class="fa-duotone fa-house" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+5. author - <i class="fa-duotone fa-user-tie" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+6. github repo - <i class="fa-brands fa-github" style="color: #ffd600;"></i>
+7. code course - <i class="fa-duotone fa-code" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+8. html course - <i class="fa-brands fa-html5" style="color: #ffd600;"></i>
+9. css course - <i class="fa-brands fa-css3-alt" style="color: #ffd600;"></i>
+10. light mode - 
+    a. sun - <i class="fa-duotone fa-sun" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+    b. moon - <i class="fa-duotone fa-moon-stars" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+    c. light bulb - <i class="fa-duotone fa-lightbulb" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600;"></i>
+
+body background - #E5E8ED
+
+<i class="fa-duotone fa-house" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
+
+assignment - look up one function - to be presented on monday
