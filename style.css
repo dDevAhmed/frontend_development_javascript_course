@@ -132,17 +132,17 @@ main.main-container {
             background: var(--tertiary-color);
             color: var(--text-color-light);
         }
-        
+
         span.navigation {
             display: flex;
             /* gap: 5px; */
 
-            a{
+            a {
                 text-decoration: none;
                 color: var(--text-color-light);
                 padding: 0px 8px;
 
-                &:hover{
+                &:hover {
                     background: var(--text-color-light);
                     color: var(--tertiary-color);
                 }
@@ -199,20 +199,21 @@ main.main-container {
 
 /* index */
 /* fixme - rename */
-.index-container{
-    span input.stranger-name-input, span button{
+.index-container {
+    span input.stranger-name-input,
+    span button {
         padding: 5px 10px;
         outline: none;
     }
 
-    span button{
+    span button {
         background: var(--text-color-light);
         color: var(--tertiary-color);
         border: 2px solid var(--text-color-light);
         cursor: pointer;
     }
 
-    p span.stranger-name{
+    p span.stranger-name {
         background: var(--tertiary-color);
         color: var(--text-color-light);
         padding: 0 10px;
@@ -330,7 +331,7 @@ main.main-container {
             color: var(--secondary-color);
         }
     }
-    p{
+    p {
         margin: 0;
     }
 }
@@ -435,3 +436,62 @@ main.main-container {
     }
 }
 /* class activity 3 */
+
+@media only screen and (max-width: 992px) {
+    .activity-container-1 {
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .activity-container-2 .class-2-nav-container {
+        width: 100%;
+        span.class-2-paragraph-container {
+            flex-direction: column;
+            button,
+            p {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+    body {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    aside.side-nav {
+        border-radius: var(--card-border-radius);
+        height: fit-content;
+        nav{
+            justify-content: center;
+            flex-direction: row;
+            span.top-section, span.bottom-section{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                div.nav-links-container{
+                    flex-direction: row;
+                    gap: 5px;
+                }
+
+            }
+        }
+    }
+    main.main-container {
+        border-radius: var(--card-border-radius);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    aside.side-nav {
+        nav{
+           
+            span.bottom-section{
+            display: none;
+            }
+        }
+    }
+}
