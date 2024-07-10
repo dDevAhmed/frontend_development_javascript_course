@@ -46,6 +46,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
   // switching site night mode
+
+  // mobile navigation
+const mobileDrawer = document.querySelector('.mobile-drawer');
+const mobileNav = document.querySelector('.mobile-nav');
+
+mobileDrawer.addEventListener('click', function (event) {
+  mobileNav.style.display = "block";
+  event.preventDefault();
+});
+
+const closeMobileNav = document.getElementById('close-mobile-nav');
+
+closeMobileNav.addEventListener('click', function (event) {
+  mobileNav.style.display = "none";
+  // alert('hello world');
+  event.preventDefault();
+});
+  // mobile navigation
   
 
 // alert('hello world!');
