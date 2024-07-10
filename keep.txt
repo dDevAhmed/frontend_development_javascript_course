@@ -18,3 +18,6 @@ body background - #E5E8ED
 <i class="fa-duotone fa-house" style="--fa-primary-color: #000000; --fa-secondary-color: #ffd600; --fa-secondary-opacity: 1;"></i>
 
 assignment - look up one function - to be presented on monday
+
+
+current page night mode = color black
